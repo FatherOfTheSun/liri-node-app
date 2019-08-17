@@ -112,6 +112,8 @@ function OMDB(movie) {
 
 function logResults(data) {
     fs.appendFiLe('log.txt', data, function (err) {
-
+        if (err) throw err;
     })
-}
+};
+
+liriRun(appCommand, userSearch);
